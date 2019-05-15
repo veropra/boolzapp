@@ -1,5 +1,5 @@
-var new_message = $(".write-chat").clone();
-new_message.removeClass("");
-new_message.children("").html("<p>lorem ipsum</p>");
+var new_message = $("write-chat-container.template").clone();
 
-$("").append(new_message);
+new_message.children(".write-chat").html("<p>acquaman</p>");
+
+$("real-messages-container").append(new_message);
