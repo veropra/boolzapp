@@ -1,0 +1,174 @@
+* {
+  font-family: 'Indie Flower', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #d1ccc0;
+  height: 100vh;
+}
+
+.section-green {
+  background-color: #218c74;
+  width: 100%;
+  height: 130px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 95vh;
+  border-radius: 5px;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.left,
+.right {
+  float: left;
+  height: 100%;
+  overflow-y: hidden;
+  box-shadow: 0px 2px 2px #535c68;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+  background-image: url("https://community.thunkable.com/uploads/default/original/3X/e/2/e29693e3a5e756f5f4d98edae3aef6f9b9f78e81.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first-contact{
+  margin-top: 25px;
+}
+.setting {
+  width: 100%;
+  height: 70px;
+  background-color: #ECE5DD;
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting img {
+  border-radius: 50%;
+  width: 50px;
+  margin: 10px;
+}
+
+.icon i {
+  text-align: right;
+  padding: 5px;
+  line-height: 50px;
+  color: #000;
+  margin: 0 5px;
+}
+
+.icon i:last-child {
+  margin-right: 20px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.search {
+  width: 100%;
+  height: 50px;
+  background-color: #ECE5DD;
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  padding: 20px;
+
+}
+
+.preview {
+  width: 100%;
+  height: 80px;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.contact::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.contact .avatar {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.contact .avatar img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.contact .prev-message {
+  width: 200px;
+  float: right;
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ECE5DD;
+}
+
+.write-chat {
+  width: 100%;
+  height: 100%;
+}
+
+.write-msg{
+  width: 100%;
+  height: 60px;
+  background-color: #ECE5DD;
+  display: flex;
+  justify-content: space-between;
+}
+
+.write-msg i {
+  font-size: 20px;
+  padding: 0 25px;
+  align-self: center;
+}
+
+.write-msg input {
+  border: none;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
