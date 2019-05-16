@@ -171,9 +171,9 @@ body {
   justify-content: space-between;
 }
 
-.write-msg i {
+.write-msg i , .right-footer-icon{
   font-size: 20px;
-  padding: 0 25px;
+  padding: 0 10px;
   align-self: center;
   cursor: pointer;
 }
