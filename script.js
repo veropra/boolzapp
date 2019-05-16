@@ -1,13 +1,14 @@
-var new_message = $(".write-chat-container.template").clone();
+//var new_message = $(".chat-message-template").clone();
 
-new_message.children(".write-chat").addclass(".mine").text("<p>acquaman</p>");
-
-$(".real-messages-container").append(new_message);
+//new_message.children(".write-chat").addClass("mine").text("acquaman");
 
 $(document).ready(function(){
   $(".right-footer-icon").click(function(){
-    var write-chat = $(".write-msg").val();
-    var new_message = $(".real-messages-container .write-chat .mine").clone();
+    var write_chat = $(".message-bar").val();
+    console.log(new_message);
+    var new_message = $(".chat-message-template").clone();
+    new_message.addClass("mine").children(".write-chat").text(write_chat);
+    $(".chat-container").append(new_message);
+    $(".message-bar").val("");
   });
-
 });
