@@ -159,8 +159,8 @@ body {
 }
 
 .write-chat.mine{
-  margin-left: 600px;
-  background-color: #218c74;
+  margin-left: 570px;
+  background-color: #218c74;/*green*/
 }
 
 .write-msg{
@@ -193,6 +193,6 @@ body {
   overflow: auto;
 }
 
-.template{
+.write-chat-container.template{
   display: none;
 }
