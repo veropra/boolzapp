@@ -36,13 +36,3 @@ function ok() {
 $(".send").click(function() {
 setTimeout(ok, 1000);
 });
-
-/*function risposta() {
-    var rispondi = $('.blocco .contenitore_messaggi').clone();
-    // a 'messaggio' figlio del div clone scovrascrivo 'testo'
-    rispondi.children('.messaggio').text('ok');
-    $('.ricevuti').append(rispondi);
-  }
-  // resetto input
-  $('.input_dx').val('');
-});*/
