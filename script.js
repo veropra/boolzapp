@@ -29,11 +29,20 @@ e far apparire lo share-square e viceversa*/
 /*Funzione per ricevere il messaggio di risposta ok*/
 function ok() {
   var ok_message = $(".chat-container .template").clone();
-  ok_message.children(".ok").children(".ok").html("Ok!");
-  ok_message.children(".ok").removeClass("ok");
+  ok_message.children(".message-ok").text("Ok!");
   $(".chat-container").append(ok_message);
 }
 
 $(".send").click(function() {
 setTimeout(ok, 1000);
 });
+
+/*function risposta() {
+    var rispondi = $('.blocco .contenitore_messaggi').clone();
+    // a 'messaggio' figlio del div clone scovrascrivo 'testo'
+    rispondi.children('.messaggio').text('ok');
+    $('.ricevuti').append(rispondi);
+  }
+  // resetto input
+  $('.input_dx').val('');
+});*/
