@@ -1,4 +1,4 @@
-/*MILESTRONE-1*/
+/*MILESTONE-1*/
 
 /*Clono il template*/
 $(document).ready(function(){
@@ -25,14 +25,18 @@ e far apparire lo share-square e viceversa*/
   });
 
 
-/*MILESTRONE-2*/
+/*MILESTONE-2*/
 /*Funzione per ricevere il messaggio di risposta ok*/
-function ok() {
-  var ok_message = $(".chat-container .template").clone();
-  ok_message.children(".message-ok").text("Ok!");
+function ok(text) {
+  var ok_message = $(".template .chat-message-template").clone();
+  ok_message.children(".write-chat").text(text);
   $(".chat-container").append(ok_message);
 }
 
+ok("Ciao Wonderwoman come stai?");
+
 $(".send").click(function() {
-setTimeout(ok, 1000);
+  setTimeout(function() {
+    ok("Ok!");
+  }, 1000);
 });

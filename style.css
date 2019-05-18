@@ -184,12 +184,11 @@ body {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 15px;
-  float: left;
   text-align: center;
   margin-left: 10px;
   margin-top: 10px;
 }
-.chat-message-template{
+.template{
   display: none;
 }
 
