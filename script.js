@@ -5,7 +5,7 @@ $(document).ready(function(){
   $(".right-footer-icon").click(function(){
     var write_chat = $(".message-bar").val();
     new_message = $(".template .chat-message-template").clone();
-    new_message.addClass("mine").children(".write-chat").text(write_chat);
+    new_message.addClass("mine").children(".write-chat").text((write_chat) + (getCurrentTime()));
     $(".chat-container").append(new_message);
     $(".message-bar").val("");
   });
@@ -24,16 +24,30 @@ e far apparire lo share-square e viceversa*/
     $(".send i").toggleClass("fa-microphone fa-share-square");
   });
 
+  /*Funzione per creare l'ora attuale*/
+    function getCurrentTime() {
+      var data = new Date ();
+      var ora = data.getHours();
+      if (ora < 10) {
+        ora = " " + "0" + ora;
+      }
+      var minuti = data.getMinutes();
+      if (minuti< 10) {
+        minuti = " " + "0" + minuti;
+      }
+      return " " + ora + ":" + minuti
+    }
+
 
 /*MILESTONE-2*/
 /*Funzione per ricevere il messaggio di risposta ok*/
 function ok(text) {
   var ok_message = $(".template .chat-message-template").clone();
-  ok_message.children(".write-chat").text(text);
+  ok_message.children(".write-chat").text((text) + (getCurrentTime()));
   $(".chat-container").append(ok_message);
 }
 
-ok("Ciao Wonderwoman come stai?");
+ok("Ciao Wonderwoman, come stai?");
 
 $(".send").click(function() {
   setTimeout(function() {
