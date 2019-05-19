@@ -40,3 +40,18 @@ $(".send").click(function() {
     ok("Ok!");
   }, 1000);
 });
+
+/*Creo una funzione per la ricerca dei contatti*/
+  $(".search input").keyup(function(){
+    var search_contact = $(this).val().toLowerCase();
+    $(".contact").each(function(){
+      var contact = $(this).find(".prev-message h4").text().toLowerCase();
+      if (contact.includes(search_contact)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+
+/*MILESTONE-3*/
